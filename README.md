@@ -12,3 +12,5 @@ gaTrack('UA-123456', 'yoursite.com', '/js/script.js');
 
 ---
 Automatically exported from https://code.google.com/p/google-analytics-js on 2015-07-26.
+
+Originally by [@remy](https://github.com/remy).
