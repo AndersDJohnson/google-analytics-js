@@ -5,7 +5,8 @@
   "main": "gajs.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "uglifyjs gajs.js -o gajs.min.js"
+    "build": "uglifyjs gajs.js -o gajs.min.js",
+    "sync-pkg": "sync-pkg --extend --empty -p version -p !dependencies -p !devDependencies -p !main"
   },
   "repository": {
     "type": "git",
@@ -22,8 +23,9 @@
   "bugs": {
     "url": "https://github.com/AndersDJohnson/google-analytics-js/issues"
   },
-  "homepage": "https://github.com/AndersDJohnson/google-analytics-js#readme",
+  "homepage": "https://github.com/AndersDJohnson/google-analytics-js",
   "devDependencies": {
+    "sync-pkg": "^0.6.2",
     "uglify-js": "^2.4.24"
   }
 }
