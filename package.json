@@ -1,6 +1,6 @@
 {
   "name": "google-analytics-js",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "JavaScript mini library to track usage of injected script via Google Analytics.",
   "main": "gajs.js",
   "scripts": {
