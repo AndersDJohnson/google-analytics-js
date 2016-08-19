@@ -25,14 +25,16 @@
         function rand(min, max) {
             return min + Math.floor(Math.random() * (max - min));
         }
+        
+        if (!this.Image) return;
 
         var i=1000000000,
             utmn=rand(i,9999999999), //random request number
             cookie=rand(10000000,99999999), //random cookie number
             random=rand(i,2147483647), //number under 2147483647
             today=(new Date()).getTime(),
-            win = window.location,
-            img = new Image(),
+            win = this.location,
+            img = new this.Image(),
             urchinUrl = 'https://www.google-analytics.com/__utm.gif?utmwv=1.3&utmn='
                 +utmn+'&utmsr=-&utmsc=-&utmul=-&utmje=0&utmfl=-&utmdt=-&utmhn='
                 +domain+'&utmr='+win+'&utmp='
